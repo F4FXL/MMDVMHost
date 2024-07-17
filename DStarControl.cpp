@@ -187,12 +187,14 @@ unsigned int CDStarControl::maybeFixupVoiceFrame(
 		if (blank_dtmf && skip_dtmf_blanking_frames > 0U) {
 			skip_dtmf_blanking_frames--;
 		} else if (blank_dtmf && skip_dtmf_blanking_frames == 0U) {
-			if ((n == 1U) && !voice_sync_data_is_null_ambe_data)
+			if ((n == 1U) && !voice_sync_data_is_null_ambe_data) {
 				LogDebug("DTMF 1");
 				blankDTMF(voice_sync_data + offset);
-			if (!data_is_null_ambe_data)
+			}
+			if (!data_is_null_ambe_data) {
 				LogDebug("DTMF 2");
 				blankDTMF(data + offset);
+			}
 		}
 
 		if (n == 1U) {
