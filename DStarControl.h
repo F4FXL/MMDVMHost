@@ -99,10 +99,10 @@ private:
 	unsigned int               m_rssiCount;
 	bool                       m_enabled;
 	FILE*                      m_fp;
-	unsigned char *            m_RFdataLookBack;
-	unsigned int               m_RFdataLookBackLen;
-	unsigned int               m_RFdataLookBackIndex;
-	CDStarSlowData             m_RFLookBackSlowData;
+	unsigned char *            m_rfDataLookBack;
+	unsigned int               m_rfDataLookBackLen;
+	unsigned int               m_rfDataLookBackIndex;
+	CDStarSlowData             m_rfLookBackSlowData;
 	unsigned char *            m_NetdataLookBack;
 	unsigned int               m_NetdataLookBackLen;
 	unsigned int               m_NetdataLookBackIndex;
