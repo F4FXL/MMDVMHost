@@ -102,6 +102,7 @@ private:
 	unsigned char *            m_RFdataLookBack;
 	unsigned int               m_RFdataLookBackLen;
 	unsigned int               m_RFdataLookBackIndex;
+	CDStarSlowData             m_RFLookBackSlowData;
 	unsigned char *            m_NetdataLookBack;
 	unsigned int               m_NetdataLookBackLen;
 	unsigned int               m_NetdataLookBackIndex;
